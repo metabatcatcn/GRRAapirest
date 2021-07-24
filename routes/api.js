@@ -1385,7 +1385,7 @@ router.get('/wallpaper/pegunungan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'gilangrajaragilangrajara') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'gilangrajara') return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Mountain.json`))
         .then(response => response.json())
